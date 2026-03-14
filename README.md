@@ -81,12 +81,19 @@ URL:
 http://localhost:8081
 ```
 
-Login credentials:
+phpMyAdmin Login credentials:
 
 ```
 Server: mysql
 Username: user
 Password: password
+```
+
+Admin Login credentials:
+
+```
+Username: organizer
+Password: admin123
 ```
 
 ## Database
