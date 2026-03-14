@@ -97,7 +97,7 @@ require_once 'config/no_cache.php';
       <h1 class="display-4 mb-2">
         <i class="fas fa-table-tennis"></i> Pickleball Tournament
       </h1>
-      <p class="lead text-muted mb-0">GITD Smiles ITIM & ADD</p>
+      <p class="lead text-muted mb-0">Track your pickleball tournament progress</p>
       <p class="text-muted mt-2">
       <small>
         Last Updated: no updates yet
