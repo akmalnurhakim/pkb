@@ -76,47 +76,6 @@ CREATE TABLE `matches` (
   `referee` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `matches`
---
-
-INSERT INTO `matches` (`id`, `team1_id`, `team2_id`, `team1_score`, `team2_score`, `match_time`, `court_num`, `winner_id`, `stage`, `status`, `player1_id`, `player2_id`, `referee`) VALUES
-(36, 29, 28, 0, 0, '10:00:00', 1, NULL, 'Group Stage', 1, 126, 120, 'Amir Izzat'),
-(37, 35, 34, 0, 0, '10:15:00', 1, NULL, 'Group Stage', 1, 162, 156, 'ITAS'),
-(38, 31, 30, 0, 0, '10:30:00', 1, NULL, 'Group Stage', 1, 138, 132, 'DSM'),
-(39, 33, 32, 0, 0, '10:45:00', 1, NULL, 'Group Stage', 1, 150, 144, 'ITOC'),
-(40, 29, 30, 0, 0, '11:00:00', 1, NULL, 'Group Stage', 1, 126, 132, 'STQA'),
-(41, 35, 33, 0, 0, '11:15:00', 1, NULL, 'Group Stage', 1, 162, 150, 'AOM'),
-(42, 28, 31, 0, 0, '11:30:00', 1, NULL, 'Group Stage', 1, 120, 138, 'ITGC'),
-(43, 34, 32, 0, 0, '11:45:00', 1, NULL, 'Group Stage', 1, 156, 144, 'ADD'),
-(44, 29, 31, 0, 0, '12:00:00', 1, NULL, 'Group Stage', 1, 126, 138, 'ITIM'),
-(45, 35, 32, 0, 0, '12:15:00', 1, NULL, 'Group Stage', 1, 162, 144, 'ITAS'),
-(46, 28, 30, 0, 0, '12:30:00', 1, NULL, 'Group Stage', 1, 120, 132, 'DSM'),
-(47, 33, 34, 0, 0, '12:45:00', 1, NULL, 'Group Stage', 1, 150, 156, 'ITOC'),
-(48, 31, 30, 0, 0, '10:00:00', 2, NULL, 'Group Stage', 1, 139, 132, 'DSM'),
-(49, 33, 32, 0, 0, '10:15:00', 2, NULL, 'Group Stage', 1, 151, 145, 'ITOC'),
-(50, 29, 28, 0, 0, '10:30:00', 2, NULL, 'Group Stage', 1, 127, 121, 'STQA'),
-(51, 35, 34, 0, 0, '10:45:00', 2, NULL, 'Group Stage', 1, 163, 157, 'AOM'),
-(52, 28, 31, 0, 0, '11:00:00', 2, NULL, 'Group Stage', 1, 121, 139, 'ITGC'),
-(53, 34, 32, 0, 0, '11:15:00', 2, NULL, 'Group Stage', 1, 157, 145, 'ADD'),
-(54, 29, 30, 0, 0, '11:30:00', 2, NULL, 'Group Stage', 1, 127, 133, 'ITIM'),
-(55, 35, 33, 0, 0, '11:45:00', 2, NULL, 'Group Stage', 1, 163, 151, 'ITAS'),
-(56, 28, 30, 0, 0, '12:00:00', 2, NULL, 'Group Stage', 1, 121, 133, 'DSM'),
-(57, 33, 34, 0, 0, '12:15:00', 2, NULL, 'Group Stage', 1, 151, 157, 'ITOC'),
-(58, 29, 31, 0, 0, '12:30:00', 2, NULL, 'Group Stage', 1, 127, 139, 'STQA'),
-(59, 35, 32, 0, 0, '12:45:00', 2, NULL, 'Group Stage', 1, 163, 145, 'AOM'),
-(60, 29, 28, 0, 0, '10:00:00', 3, NULL, 'Group Stage', 1, 128, 122, 'STQA'),
-(61, 35, 34, 0, 0, '10:15:00', 3, NULL, 'Group Stage', 1, 164, 158, 'AOM'),
-(62, 31, 30, 0, 0, '10:30:00', 3, NULL, 'Group Stage', 1, 140, 134, 'ITGC'),
-(63, 33, 32, 0, 0, '10:45:00', 3, NULL, 'Group Stage', 1, 152, 146, 'ADD'),
-(64, 29, 30, 0, 0, '11:00:00', 3, NULL, 'Group Stage', 1, 128, 134, 'ITIM'),
-(65, 35, 33, 0, 0, '11:15:00', 3, NULL, 'Group Stage', 1, 164, 152, 'ITAS'),
-(66, 28, 31, 0, 0, '11:30:00', 3, NULL, 'Group Stage', 1, 122, 140, 'DSM'),
-(67, 34, 32, 0, 0, '11:45:00', 3, NULL, 'Group Stage', 1, 158, 146, 'ITOC'),
-(68, 29, 31, 0, 0, '12:00:00', 3, NULL, 'Group Stage', 1, 128, 140, 'STQA'),
-(69, 35, 32, 0, 0, '12:15:00', 3, NULL, 'Group Stage', 1, 164, 146, 'AOM'),
-(70, 28, 30, 0, 0, '12:30:00', 3, NULL, 'Group Stage', 1, 122, 134, 'AOM'),
-(71, 33, 34, 0, 0, '12:45:00', 3, NULL, 'Group Stage', 1, 152, 158, 'ADD');
 
 -- --------------------------------------------------------
 
@@ -135,61 +94,6 @@ CREATE TABLE `players` (
   `is_reserve` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `players`
---
-
-INSERT INTO `players` (`id`, `team_id`, `name`, `match_played`, `total_points`, `points_against`, `court_num`, `is_reserve`) VALUES
-(120, 28, 'Mohd Suhairie & Nur Farhanna', 0, 0, 0, NULL, 0),
-(121, 28, 'Mohd Fariz & Aznein', 0, 0, 0, NULL, 0),
-(122, 28, 'Maspul & Nur Hani', 0, 0, 0, NULL, 0),
-(123, 28, 'Muhammad Farid & Siti Aminah', 0, 0, 0, NULL, 0),
-(124, 28, 'Muhammad Irfan Syahmi & Hafizah', 0, 0, 0, NULL, 0),
-(125, 28, 'Khairold Safri & Azra Ain', 0, 0, 0, NULL, 1),
-(126, 29, 'Raimi Rahim & Mimi Maisara', 0, 0, 0, NULL, 0),
-(127, 29, 'Dheffirdaus & Nor Hazipah', 0, 0, 0, NULL, 0),
-(128, 29, 'Mohd Norshahrim & Nurdiyana', 0, 0, 0, NULL, 0),
-(129, 29, 'Che Ku Mohd Salahuddin & Sharina Ebel', 0, 0, 0, NULL, 0),
-(130, 29, 'Mohd Ros Hamiza & Fatin Aisyah', 0, 0, 0, NULL, 0),
-(131, 29, 'Syazwan Shamsuddin & Norehan', 0, 0, 0, NULL, 1),
-(132, 30, 'Ahmad Radzi & Rohaida', 0, 0, 0, NULL, 0),
-(133, 30, 'Mohd Syahir & Rosmahlina', 0, 0, 0, NULL, 0),
-(134, 30, 'Mohd Shah & Norida', 0, 0, 0, NULL, 0),
-(135, 30, 'Peter Raj & Noorain', 0, 0, 0, NULL, 0),
-(136, 30, 'Norman Hafiz & Siti Fatimah', 0, 0, 0, NULL, 0),
-(137, 30, 'Ahmad Syamimi Shahiri & Zuarida', 0, 0, 0, NULL, 1),
-(138, 31, 'Muhammad Daniel & Nurhayati', 0, 0, 0, NULL, 0),
-(139, 31, 'Ebby Sabilullah & Nur Rashidah', 0, 0, 0, NULL, 0),
-(140, 31, 'Muhammad Irfan & Yusnor Arliza', 0, 0, 0, NULL, 0),
-(141, 31, 'Ramlan & Hukiza', 0, 0, 0, NULL, 0),
-(142, 31, 'Muhammad Rasheed & Norhayati', 0, 0, 0, NULL, 0),
-(143, 31, 'Zamri', 0, 0, 0, NULL, 1),
-(144, 32, 'Amir Izzat & Norlida', 0, 0, 0, NULL, 0),
-(145, 32, 'Raja Shahiezal & Saleha', 0, 0, 0, NULL, 0),
-(146, 32, 'Irwan & Noor Syazwani', 0, 0, 0, NULL, 0),
-(147, 32, 'Roszaimi & Anim Hafiza', 0, 0, 0, NULL, 0),
-(148, 32, 'Ilmar Qalbi & Nurul Fiza', 0, 0, 0, NULL, 0),
-(149, 32, 'Wan Ibrahim & Nurul Shafinaz', 0, 0, 0, NULL, 1),
-(150, 33, 'Abdul Muntaqim & Nur Anis Aqilah', 0, 0, 0, NULL, 0),
-(151, 33, 'Danial Aysar & Rashidah', 0, 0, 0, NULL, 0),
-(152, 33, 'Ikmal Hisyam & Nur Atiqah', 0, 0, 0, NULL, 0),
-(153, 33, 'Ahmad Khairul Ikhwan & Zuriah Saad', 0, 0, 0, NULL, 0),
-(154, 33, 'Mohd Shahrul Nizam & Mazalifah', 0, 0, 0, NULL, 0),
-(155, 33, 'Chong Heng Keong & Massabrina', 0, 0, 0, NULL, 1),
-(156, 34, 'Mohd Najmi & Siti Aisyah', 0, 0, 0, NULL, 0),
-(157, 34, 'Mohammad Syazwan & Aimi Syafiqah', 0, 0, 0, NULL, 0),
-(158, 34, 'Amir Asyraf & Nurakifah', 0, 0, 0, NULL, 0),
-(159, 34, 'Thariq Aiman & Siti Munirah', 0, 0, 0, NULL, 0),
-(160, 34, 'Mohammad Syafiq & Norliah', 0, 0, 0, NULL, 0),
-(161, 34, 'Noorhisham Pearl & Qurratul Aini', 0, 0, 0, NULL, 1),
-(162, 35, 'TS. Ahmad Shah & Nurdiana', 0, 0, 0, NULL, 0),
-(163, 35, 'Ching Min Shen & Nur Hafizah', 0, 0, 0, NULL, 0),
-(164, 35, 'Muhammad Hakimi & Nailah', 0, 0, 0, NULL, 0),
-(165, 35, 'Khairul Azrin & Siti Nurkhadijah', 0, 0, 0, NULL, 0),
-(166, 35, 'Raja Ahmad Mukhairis & Siti Hajar', 0, 0, 0, NULL, 0),
-(167, 35, 'Maharizal & Anis Syafiqa', 0, 0, 0, NULL, 1);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `teams`
@@ -204,24 +108,6 @@ CREATE TABLE `teams` (
   `match_loss` int(11) DEFAULT 0,
   `total_points` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `teams`
---
-
-INSERT INTO `teams` (`id`, `name`, `group`, `match_played`, `match_won`, `match_loss`, `total_points`) VALUES
-(28, 'ADD', 'A', 0, 0, 0, 0),
-(29, 'AOM', 'A', 0, 0, 0, 0),
-(30, 'ITAS', 'A', 0, 0, 0, 0),
-(31, 'ITOC', 'A', 0, 0, 0, 0),
-(32, 'ITIM', 'B', 0, 0, 0, 0),
-(33, 'STQA', 'B', 0, 0, 0, 0),
-(34, 'ITGC', 'B', 0, 0, 0, 0),
-(35, 'DSM', 'B', 0, 0, 0, 0);
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `admin`
